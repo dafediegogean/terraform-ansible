@@ -17,11 +17,11 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-03d5c68bab01f3496"
   instance_type = "t2.micro"
-  key_name = "iac-alura"
+  key_name = "<KEY_NAME>"
   # user_data = <<-EOF
   #                #!/bin/bash
   #                cd /home/ubuntu
-  #                echo "<h1>Feito com Terraform</h1>" > index.html
+  #                echo "<h1>Welcome!</h1>" > index.html
   #                nohup busybox httpd -f -p 8080 &
   #                EOF
   tags = {
